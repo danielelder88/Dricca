@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dricca Cosméticos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Firebase SDKs (ordem correta) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const firebaseConfig = {
+        apiKey: "AIzaSyC_vNWe7ThBRYowFT9LzbTR7O-2D05_9-g",
+        authDomain: "dricca-1ad70.firebaseapp.com",
+        projectId: "dricca-1ad70",
+        storageBucket: "dricca-1ad70.firebasestorage.app",
+        messagingSenderId: "499575718116",
+        appId: "1:499575718116:web:90e4bf06862a0a4e8dacf1"
+      };
+
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+
+      // Exemplo de teste simples: ver se Firebase carregou
+      console.log("Firebase carregado com sucesso");
+
+      // TODO: Aqui você insere as funções e interações do seu sistema
+      // Exemplo:
+      // document.getElementById("meuBotao").onclick = () => { ... };
+    });
+  </script>
+
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    h1 { color: #d63384; }
+  </style>
+</head>
+<body>
+  <h1>DRICCA Cosméticos</h1>
+  <p>Site em construção. Firebase conectado com sucesso!</p>
+</body>
+</html>
